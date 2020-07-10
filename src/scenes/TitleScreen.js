@@ -7,6 +7,7 @@ export default class TitleScreen extends Phaser.Scene {
     }
 
     create(){
-        this.add.text(400, 250, 'Hello World');
+       const text = this.add.text(400, 250, 'Hello World');
+       text.setOrigin(0.5, 0.5)
     }
 }
