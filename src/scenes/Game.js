@@ -1,4 +1,4 @@
-import Phaser, { Physics } from 'phaser';
+import Phaser, { physics } from 'phaser';
 
 class Game extends Phaser.Scene {
 
@@ -11,6 +11,8 @@ class Game extends Phaser.Scene {
     }
 
     create(){
+        this.physics.world.setBounds(-100, 0, 1000, 500)
+
        this.ball = this.add.circle(400, 50, 10, 0xffffff, 1);
        this.physics.add.existing(this.ball)
        this.ball.body.setBounce(1, 1)
@@ -24,6 +26,7 @@ class Game extends Phaser.Scene {
 
        this.paddleLeft = this.add.rectangle(50, 250, 30, 100, 0xffffff, 1)
        this.physics.add.existing(this.paddleLeft, true)
+    
        
 
        this.paddleRight = this.add.rectangle(750, 250, 30, 100, 0xffffff, 1)
