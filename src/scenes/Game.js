@@ -52,7 +52,7 @@ class Game extends Phaser.Scene {
             return;
         }
 
-        const aispeed = 5
+        const aispeed = 5.5
         if (diff < 0) {
             this.paddleRightVelocity.y = -aispeed
             if (this.paddleRightVelocity.y < -10){
