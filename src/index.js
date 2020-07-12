@@ -4,7 +4,8 @@ import Game from './scenes/Game';
 
 const config = {
     width: 800,
-    height: 600,
+    height: 500,
+    backgroundColor: 0x616161,
     type: Phaser.AUTO,
     physics: {
         default: 'arcade',
