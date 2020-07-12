@@ -4,6 +4,8 @@ class Game extends Phaser.Scene {
 
     init(){
         this.paddleRightVelocity = new Phaser.Math.Vector2(0,0)
+        this.leftScore = 0
+        this.rightScore = 0
     }
 
     preload(){
@@ -32,6 +34,13 @@ class Game extends Phaser.Scene {
 
        this.physics.add.collider(this.paddleLeft, this.ball)
        this.physics.add.collider(this.paddleRight, this.ball)
+
+       const scoreStyle = {
+           fontSize: 48
+       }
+
+       this.leftScoreLabel = this.add.text(300, 125, '0', scoreStyle).setOrigin(0.5, 0.5)
+       this.rightScoreLabel = this.add.text(500, 375, '0', scoreStyle).setOrigin(0.5, 0.5)
 
        this.cursors = this.input.keyboard.createCursorKeys()
     }
@@ -73,9 +82,21 @@ class Game extends Phaser.Scene {
 
         if (this.ball.x < -30){
             this.resetBall()
+            this.incrementLeftScore()
         } else if ( this.ball.x > 830){
             this.resetBall()
+            this.incrementRightScore()
         }
+    }
+
+    incrementLeftScore(){
+        this.leftScore += 1
+        this.leftScoreLabel.text = this.leftScore
+    }
+
+    incrementRightScore(){
+        this.rightScore += 1
+        this.rightScoreLabel.text = this.rightScore
     }
 
     resetBall(){
