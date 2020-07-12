@@ -1,4 +1,4 @@
-import Phaser from 'phaser';
+import Phaser, { Physics } from 'phaser';
 
 class Game extends Phaser.Scene {
 
@@ -15,10 +15,24 @@ class Game extends Phaser.Scene {
 
        ball.body.setVelocity(-200, 0)
 
-       const paddleLeft = this.add.rectangle(50, 250, 30, 100, 0xffffff, 1)
-       this.physics.add.existing(paddleLeft, true)
+       this.paddleLeft = this.add.rectangle(50, 250, 30, 100, 0xffffff, 1)
+       this.physics.add.existing(this.paddleLeft, true)
 
-       this.physics.add.collider(paddleLeft, ball)
+       this.physics.add.collider(this.paddleLeft, ball)
+
+       this.cursors = this.input.keyboard.createCursorKeys()
+    }
+
+    update(){
+        /** @type { Phaser.Physics.Arcade.Body } */
+        const body = this.paddleLeft.body;
+        if (this.cursors.up.isDown){
+            body.setVelocityY(-100);
+        } else if (this.cursors.down.isDown){
+            body.setVelocityY(100);
+        } else {
+            body.setVelocityY(0)
+        }
     }
 }
 
