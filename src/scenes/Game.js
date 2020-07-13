@@ -2,7 +2,7 @@ import Phaser, { physics } from 'phaser';
 
 import WebFontFile from './WebFontFile';
 
-import { GameBackground } from '../consts/SceneKeys'
+import { GameBackground, GameOver } from '../consts/SceneKeys'
 
 import * as Colors from '../consts/Colors'
 
@@ -149,6 +149,11 @@ class Game extends Phaser.Scene {
         } else {
             this.ball.active = false
             this.physics.world.remove(this.ball.body)
+            this.scene.stop(GameBackground)
+            this.scene.start(GameOver, {
+                leftScore: this.leftScore,
+                rightScore: this.rightScore
+            })
         }
     }
 
