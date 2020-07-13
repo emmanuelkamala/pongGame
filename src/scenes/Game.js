@@ -133,10 +133,8 @@ class Game extends Phaser.Scene {
 
         const maxScore = 1
         if (this.leftScore >= maxScore){
-            console.log('Player won')
             this.gameState = GameState.PlayerWon
         } else if (this.rightScore >= maxScore){
-            console.log('computer won')
             this.gameState = GameState.AIWon
         }
 

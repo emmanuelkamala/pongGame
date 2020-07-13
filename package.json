@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "parcel-plugin-static-files-copy": "^2.4.3",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
@@ -19,5 +20,9 @@
   "dependencies": {
     "phaser": "^3.23.0",
     "webfontloader": "^1.6.28"
-  }
+  },
+  "staticFiles": {
+    "staticPath": "sounds",
+    "watcherGlob": "**"
+}
 }
