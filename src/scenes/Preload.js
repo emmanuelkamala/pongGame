@@ -11,8 +11,8 @@ export default class Preload extends Phaser.Scene {
         const fonts = new WebFontFile(this.load, 'Teko')
         this.load.addFile(fonts)
 
-        this.load.audio(AudioKeys.PongBeep, 'sounds/ping_pong_8bit_beeep.mp3')
-        this.load.audio(AudioKeys.PongPlop, 'sounds/ping_pong_8bit_plop.mp3')
+        this.load.audio(AudioKeys.PongBeep, 'assets/ping_pong_8bit_beeep.mp3')
+        this.load.audio(AudioKeys.PongPlop, 'assets/ping_pong_8bit_plop.mp3')
     }
 
     create(){

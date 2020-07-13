@@ -6,6 +6,8 @@ import * as Colors from '../consts/Colors'
 
 import { Teko } from '../consts/Fonts'
 
+import * as AudioKeys from '../consts/AudioKeys'
+
 const GameState = {
     Running: 'running',
     PlayerWon: 'player-won',
@@ -36,17 +38,18 @@ class Game extends Phaser.Scene {
        this.ball.body.setBounce(1, 1)
 
        this.ball.body.setCollideWorldBounds(true, 1, 1)
+       this.ball.body.onWorldBounds = true
 
        this.paddleLeft = this.add.rectangle(50, 250, 30, 100, Colors.white, 1)
        this.physics.add.existing(this.paddleLeft, true)
     
-    
        this.paddleRight = this.add.rectangle(750, 250, 30, 100, Colors.white, 1)
        this.physics.add.existing(this.paddleRight, true)
-       
 
-       this.physics.add.collider(this.paddleLeft, this.ball)
-       this.physics.add.collider(this.paddleRight, this.ball)
+       this.physics.add.collider(this.paddleLeft, this.ball, this.handlePaddleBallCollision, undefined, this)
+       this.physics.add.collider(this.paddleRight, this.ball, this.handlePaddleBallCollision, undefined, this)
+
+       this.physics.world.on('worldbounds', this.handleBallWorldBoundsCollision, this)
 
        const scoreStyle = {
            fontSize: 48,
@@ -64,18 +67,27 @@ class Game extends Phaser.Scene {
     }
 
     update(){
-
         if (this.paused || this.gameState !== GameState.Running){
             return
         }
         
         this.processPlayerInput()
-
         this.updateAI()
+        this.checkScore()   
+    }
 
-        this.checkScore()
+    handleBallWorldBoundsCollision(body, up, down, left, right){
+        if ( left || right){
+            return
+        }
 
+        this.sound.play(AudioKeys.PongPlop)
+    }
+
+    handlePaddleBallCollision(paddle, ball){
+        this.sound.play(AudioKeys.PongBeep)
         
+       
     }
 
     processPlayerInput(){
