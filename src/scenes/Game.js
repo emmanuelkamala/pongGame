@@ -12,6 +12,7 @@ class Game extends Phaser.Scene {
         this.paddleRightVelocity = new Phaser.Math.Vector2(0,0)
         this.leftScore = 0
         this.rightScore = 0
+        this.paused = false
     }
 
     preload(){
@@ -60,6 +61,10 @@ class Game extends Phaser.Scene {
     }
 
     update(){
+
+        if (this.paused){
+            return
+        }
         
         this.processPlayerInput()
 
@@ -109,12 +114,34 @@ class Game extends Phaser.Scene {
     }
 
     checkScore(){
-        if (this.ball.x < -30){
-            this.resetBall()
-            this.incrementLeftScore()
-        } else if ( this.ball.x > 830){
-            this.resetBall()
+
+        const x = this.ball.x
+        const leftBounds = -30
+        const rightBounds = 830
+        if (x >= leftBounds && x <= rightBounds){
+            return
+        }
+
+        if (this.ball.x < leftBounds){
             this.incrementRightScore()
+        } else if ( this.ball.x > rightBounds){
+            this.incrementLeftScore()
+        }
+
+        const maxScore = 1
+        if (this.leftScore >= maxScore){
+            console.log('Player won')
+            this.paused = true
+        } else if (this.rightScore >= maxScore){
+            console.log('computer won')
+            this.paused = true
+        }
+
+        if (!this.paused){
+            this.resetBall()
+        } else {
+            this.ball.active = false
+            this.physics.world.remove(this.ball.body)
         }
     }
 
