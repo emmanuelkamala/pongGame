@@ -2,7 +2,9 @@ import Phaser, { physics } from 'phaser';
 
 import WebFontFile from './WebFontFile';
 
-import { GameBackground } from '../scenes/GameBackground'
+import { GameBackground } from '../consts/SceneKeys'
+
+import * as Colors from '../consts/Colors'
 
 class Game extends Phaser.Scene {
 
@@ -24,7 +26,7 @@ class Game extends Phaser.Scene {
 
         this.physics.world.setBounds(-100, 0, 1000, 500)
 
-       this.ball = this.add.circle(400, 50, 10, 0xffffff, 1);
+       this.ball = this.add.circle(400, 50, 10, Colors.white, 1);
        this.physics.add.existing(this.ball)
        this.ball.body.setBounce(1, 1)
 
@@ -32,12 +34,12 @@ class Game extends Phaser.Scene {
 
        this.resetBall()
 
-       this.paddleLeft = this.add.rectangle(50, 250, 30, 100, 0xffffff, 1)
+       this.paddleLeft = this.add.rectangle(50, 250, 30, 100, Colors.white, 1)
        this.physics.add.existing(this.paddleLeft, true)
     
        
 
-       this.paddleRight = this.add.rectangle(750, 250, 30, 100, 0xffffff, 1)
+       this.paddleRight = this.add.rectangle(750, 250, 30, 100, Colors.white, 1)
        this.physics.add.existing(this.paddleRight, true)
        
 
@@ -56,6 +58,17 @@ class Game extends Phaser.Scene {
     }
 
     update(){
+        
+        this.processPlayerInput()
+
+        this.updateAI()
+
+        this.checkScore()
+
+        
+    }
+
+    processPlayerInput(){
         /** @type { Phaser.Physics.Arcade.StaticBody } */
         const body = this.paddleLeft.body
 
@@ -67,7 +80,9 @@ class Game extends Phaser.Scene {
             this.paddleLeft.y += 10
             this.paddleLeft.body.updateFromGameObject()
         }
+    }
 
+    updateAI(){
         const diff = this.ball.y - this.paddleRight.y
 
         if (Math.abs(diff) < 10){
@@ -89,7 +104,9 @@ class Game extends Phaser.Scene {
 
         this.paddleRight.y += this.paddleRightVelocity.y
         this.paddleRight.body.updateFromGameObject()
+    }
 
+    checkScore(){
         if (this.ball.x < -30){
             this.resetBall()
             this.incrementLeftScore()

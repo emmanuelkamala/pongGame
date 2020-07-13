@@ -22,7 +22,7 @@ const game = new Phaser.Game(config)
 
 game.scene.add(SceneKeys.TitleScreen, TitleScreen)
 game.scene.add(SceneKeys.Game, Game)
-game.scene.add(SceneKeys.GameBackground, GameBackground)
+game.scene.add('game-background', GameBackground)
 
 
 game.scene.start(SceneKeys.Game)
