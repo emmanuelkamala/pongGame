@@ -1,10 +1,10 @@
 import Phaser, { physics } from 'phaser';
 
-import WebFontFile from './WebFontFile';
-
 import { GameBackground, GameOver } from '../consts/SceneKeys'
 
 import * as Colors from '../consts/Colors'
+
+import { Teko } from '../consts/Fonts'
 
 const GameState = {
     Running: 'running',
@@ -22,10 +22,6 @@ class Game extends Phaser.Scene {
         this.paused = false
     }
 
-    preload(){
-        const fonts = new WebFontFile(this.load, 'Teko')
-        this.load.addFile(fonts)
-    }
 
     create(){
 
@@ -54,7 +50,7 @@ class Game extends Phaser.Scene {
 
        const scoreStyle = {
            fontSize: 48,
-           fontFamily: 'Teko'
+           fontFamily: Teko
        }
 
        this.leftScoreLabel = this.add.text(200, 85, '0', scoreStyle).setOrigin(0.5, 0.5)
