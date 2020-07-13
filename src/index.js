@@ -24,5 +24,5 @@ game.scene.add(SceneKeys.TitleScreen, TitleScreen)
 game.scene.add(SceneKeys.Game, Game)
 game.scene.add('game-background', GameBackground)
 
-
-game.scene.start(SceneKeys.Game)
+game.scene.start(SceneKeys.TitleScreen)
+//game.scene.start(SceneKeys.Game)
