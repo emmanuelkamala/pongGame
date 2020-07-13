@@ -6,9 +6,16 @@ import { GameBackground } from '../consts/SceneKeys'
 
 import * as Colors from '../consts/Colors'
 
+const GameState = {
+    Running: 'running',
+    PlayerWon: 'player-won',
+    AIWon: 'ai-won'
+}
+
 class Game extends Phaser.Scene {
 
     init(){
+        this.gameState = GameState.Running
         this.paddleRightVelocity = new Phaser.Math.Vector2(0,0)
         this.leftScore = 0
         this.rightScore = 0
@@ -62,7 +69,7 @@ class Game extends Phaser.Scene {
 
     update(){
 
-        if (this.paused){
+        if (this.paused || this.gameState !== GameState.Running){
             return
         }
         
@@ -131,13 +138,13 @@ class Game extends Phaser.Scene {
         const maxScore = 1
         if (this.leftScore >= maxScore){
             console.log('Player won')
-            this.paused = true
+            this.gameState = GameState.PlayerWon
         } else if (this.rightScore >= maxScore){
             console.log('computer won')
-            this.paused = true
+            this.gameState = GameState.AIWon
         }
 
-        if (!this.paused){
+        if (this.gameState === GameState.Running){
             this.resetBall()
         } else {
             this.ball.active = false
