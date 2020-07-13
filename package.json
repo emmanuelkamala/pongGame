@@ -17,6 +17,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "phaser": "^3.23.0"
+    "phaser": "^3.23.0",
+    "webfontloader": "^1.6.28"
   }
 }

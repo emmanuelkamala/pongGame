@@ -1,5 +1,7 @@
 import Phaser, { physics } from 'phaser';
 
+import WebFontFile from './WebFontFile';
+
 class Game extends Phaser.Scene {
 
     init(){
@@ -9,7 +11,8 @@ class Game extends Phaser.Scene {
     }
 
     preload(){
-
+        const fonts = new WebFontFile(this.load, 'Teko')
+        this.load.addFile(fonts)
     }
 
     create(){
@@ -36,7 +39,8 @@ class Game extends Phaser.Scene {
        this.physics.add.collider(this.paddleRight, this.ball)
 
        const scoreStyle = {
-           fontSize: 48
+           fontSize: 48,
+           fontFamily: 'Teko'
        }
 
        this.leftScoreLabel = this.add.text(300, 125, '0', scoreStyle).setOrigin(0.5, 0.5)
