@@ -16,6 +16,10 @@ class Game extends Phaser.Scene {
     }
 
     create(){
+
+        this.scene.run('game-background')
+        this.scene.sendToBack('game-background')
+
         this.physics.world.setBounds(-100, 0, 1000, 500)
 
        this.ball = this.add.circle(400, 50, 10, 0xffffff, 1);
@@ -43,8 +47,8 @@ class Game extends Phaser.Scene {
            fontFamily: 'Teko'
        }
 
-       this.leftScoreLabel = this.add.text(300, 125, '0', scoreStyle).setOrigin(0.5, 0.5)
-       this.rightScoreLabel = this.add.text(500, 375, '0', scoreStyle).setOrigin(0.5, 0.5)
+       this.leftScoreLabel = this.add.text(200, 85, '0', scoreStyle).setOrigin(0.5, 0.5)
+       this.rightScoreLabel = this.add.text(600, 85, '0', scoreStyle).setOrigin(0.5, 0.5)
 
        this.cursors = this.input.keyboard.createCursorKeys()
     }
