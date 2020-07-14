@@ -99,14 +99,17 @@ class Game extends Phaser.Scene {
     processPlayerInput(){
         /** @type { Phaser.Physics.Arcade.StaticBody } */
         const body = this.paddleLeft.body
+        
 
         if (this.cursors.up.isDown){
             this.paddleLeft.y -= 10
-            this.paddleLeft.body.updateFromGameObject()
+            body.updateFromGameObject()
+            
 
         } else if(this.cursors.down.isDown){
             this.paddleLeft.y += 10
-            this.paddleLeft.body.updateFromGameObject()
+            body.updateFromGameObject()
+           
         }
     }
 
