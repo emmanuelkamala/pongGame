@@ -36,6 +36,7 @@ class Game extends Phaser.Scene {
        this.physics.add.existing(this.ball)
        this.ball.body.setCircle(10)
        this.ball.body.setBounce(1, 1)
+       this.ball.body.setMaxSpeed(800)
 
        this.ball.body.setCollideWorldBounds(true, 1, 1)
        this.ball.body.onWorldBounds = true
@@ -87,7 +88,12 @@ class Game extends Phaser.Scene {
     handlePaddleBallCollision(paddle, ball){
         this.sound.play(AudioKeys.PongBeep)
         
-       
+        const body = this.ball.body
+        const vel = body.velocity
+        vel.x *= 1.30
+        vel.y *= 1.30
+
+        body.setVelocity(vel.x, vel.y)
     }
 
     processPlayerInput(){
@@ -143,7 +149,7 @@ class Game extends Phaser.Scene {
             this.incrementLeftScore()
         }
 
-        const maxScore = 1
+        const maxScore = 11
         if (this.leftScore >= maxScore){
             this.gameState = GameState.PlayerWon
         } else if (this.rightScore >= maxScore){
