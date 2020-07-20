@@ -100,14 +100,16 @@ class Game extends Phaser.Scene {
         /** @type { Phaser.Physics.Arcade.StaticBody } */
         const body = this.paddleLeft.body
         
-
         if (this.cursors.up.isDown){
-            this.paddleLeft.y -= 10
+            if (this.paddleLeft.y > 30) {
+                this.paddleLeft.y -= 10;
+            }
             body.updateFromGameObject()
             
-
         } else if(this.cursors.down.isDown){
-            this.paddleLeft.y += 10
+            if (this.paddleLeft.y < 480){
+                this.paddleLeft.y += 10; 
+            }
             body.updateFromGameObject()
            
         }
