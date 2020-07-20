@@ -1,3 +1,1 @@
-const Teko = 'Teko'
-
-export { Teko }
+export const Teko = 'Teko';

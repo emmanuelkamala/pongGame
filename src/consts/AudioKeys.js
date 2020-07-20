@@ -1,6 +1,4 @@
+const PongBeep = 'pong-beep';
+const PongPlop = 'pong-plop';
 
-
-const PongBeep = 'pong-beep'
-const PongPlop = 'pong-plop'
-
-export { PongBeep, PongPlop}
+export { PongBeep, PongPlop };
