@@ -27,7 +27,7 @@ export default class WebFontFile extends Phaser.Loader.File{
 		switch (this.service){
 			case 'google':
 				config['google'] = {
-					families: this.fontNames;
+					families: this.fontNames
 				}
 				break
 
