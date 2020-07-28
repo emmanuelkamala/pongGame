@@ -1,9 +1,13 @@
 # Pong Game
 
-This is a game design using Phaser 3 framework.
+This is a game design using Phaser 3 framework. The name of the game is called Pong. 
 
+# How to Play
 
-Additional description about the project and its features.
+Pong is a two-dimensional sports game that simulates table tennis. The player controls an in-game paddle by moving it vertically across the left or right side of the screen. They can compete against another player controlling a second paddle on the opposing side. Players use the paddles to hit a ball back and forth. The goal is for each player to reach eleven points before the opponent; points are earned when one fails to return the ball to the other.
+
+But in this design there is going to be one Player that is going to play with the computer. The game has a scoring system, were by if a player misses hitting the ball, then a score is added to the counter player and vice versa.
+
 
 ![screenshot](./dist/images/game.png)
 
@@ -18,7 +22,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-<a href="https://emmanuelkamala.github.io/">Live Version</a>
+<a href="https://myponggame.netlify.app">Live Version</a>
 
 
 ## Getting Started
