@@ -9,8 +9,6 @@ Pong is a two-dimensional sports game that simulates table tennis. The player co
 But in this design there is going to be one Player that is going to play with the computer. The game has a scoring system, were by if a player misses hitting the ball, then a score is added to the counter player and vice versa.
 
 
-Additional description about the project and its features.
-
 ![screenshot](./dist/images/game.png)
 
 ## Built With
