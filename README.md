@@ -3,8 +3,6 @@
 This is a game design using Phaser 3 framework.
 
 
-Additional description about the project and its features.
-
 ![screenshot](./dist/images/game.png)
 
 ## Built With
