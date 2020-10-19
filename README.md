@@ -41,7 +41,7 @@ To run the index file and see the project; enter this command on the command lin
 Then open the browser and enter this link:
 http://localhost:8080
 
-## Authors
+## Author
 
 👤 **Author**
 
