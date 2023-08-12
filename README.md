@@ -48,7 +48,7 @@ Clone this repository
  
  `$npm run start:dev`
 
-## [Live demo](https://ibunhabibuweather.netlify.app/ "Of the project") of the project
+## [Live demo](https://myponggame.netlify.app/ "Of the project") of the project
 
 ## Author
 * Github: [IBUNHABIBU](https://github.com/IBUNHABIBU)
