@@ -12,8 +12,8 @@
   <h3 align="center"> Is the Javascript  quiz to implement the concept of API. I made a simple page to fetch for weather data.</h3>
 
   <p align="center">
-    <a href="https://github.com/IBUNHABIBU/weather-app/issues">Report Bug</a>
-    <a href="https://github.com/IBUNHABIBU/weather-app/issues">Request Feature</a>
+    <a href="https://github.com/IBUNHABIBU/pongGame/issues">Report Bug</a>
+    <a href="https://github.com/IBUNHABIBU/pongGame/issues">Request Feature</a>
   </p>
 </p>
 
