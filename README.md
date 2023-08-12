@@ -24,9 +24,9 @@
 ## Built with
 * HTML
 * CSS
-* JAVASCRIPT
+* JAVASCRIPT(ES6)
 * Webpack
-* fetch API using OpenWeatherMap
+* phaser 3.0
 
 ## Features 
   * Seach form to seach for any city in the world.
