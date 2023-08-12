@@ -4,7 +4,7 @@
 [![Issues][issues-shield]][issues-url]
 
 <p align="center">
-  <a href="git@github.com:IBUNHABIBU/platform-game.git">
+  <a href="https://github.com/IBUNHABIBU/pongGame.git">
     <p align="center"> <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="JavaScript" width="100" height="100"> </p>
   </a>
 
@@ -49,9 +49,9 @@ Clone this repository
 ## [Live demo](https://myponggame.netlify.app/ "Of the project") of the project
 
 ## Author
-* Github: [IBUNHABIBU](https://github.com/IBUNHABIBU)
-* Twitter: [@ibunhabibu](https://twitter.com/Ibunhabibu)
-* LinkedIn: [Salum Habibu Kombo](https://www.linkedin.com/in/salum-habibu/)
+* Github: [Emmanuel Kamala](https://github.com/emmanuelkamala)
+* Twitter: [@ejkamala](https://twitter.com/ejkamala)
+* LinkedIn: [Emmanuel Kamala](https://www.linkedin.com/in/emmanuelkamala)
 
 ## your support 
 Give a :star: if you liked this project 
