@@ -8,7 +8,7 @@
     <p align="center"> <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="JavaScript" width="100" height="100"> </p>
   </a>
 
-  <h2 align="center"> Pong gameZZAzazzzzzzzzzzzzzzA</h2>
+  <h2 align="center"> Pong game</h2>
   <h3 align="center"> Is the Javascript  quiz to implement the concept of API. I made a simple page to fetch for weather data.</h3>
 
   <p align="center">
