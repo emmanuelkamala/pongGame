@@ -46,7 +46,8 @@ Clone this repository
 
  `$npm install` 
  
- `$npm run start:dev`
+ `$npm run start`
+ `Then open the browser and enter this link: http://localhost:8080`
 
 ## [Live demo](https://myponggame.netlify.app/ "Of the project") of the project
 
