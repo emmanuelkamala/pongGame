@@ -27,10 +27,11 @@
 * phaser 3.0
 
 ## Features 
-  * Seach form to seach for any city in the world.
-  * Display temp
-  * Display low and high temperatue
-  * sky status changes according to weather conditions like clear, sunny, cloudy etc
+  * Intuitive controls: Use your keyboard or touch input to control the paddles and bounce the ball.
+  * Single-player mode: Face off against a challenging AI opponent with adjustable difficulty levels.
+  * Fluid animations: Enjoy smooth and engaging animations powered by the Phaser 3.0 framework.
+  * Responsive design: Play the game on various devices, from desktops to mobile, with a responsive user interface.
+  * Classic gameplay: Experience the timeless thrill of Pong, perfect for quick gaming sessions or nostalgia trips.
   
 ## Requirement 
 * HTML
