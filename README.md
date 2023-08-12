@@ -9,7 +9,7 @@
   </a>
 
   <h2 align="center"> Pong game</h2>
-  <h3 align="center"> Is the Javascript  quiz to implement the concept of API. I made a simple page to fetch for weather data.</h3>
+  <h3 align="center"> Experience the timeless thrill of Pong in our modern rendition powered by Phaser 3.0!</h3>
 
   <p align="center">
     <a href="https://github.com/IBUNHABIBU/pongGame/issues">Report Bug</a>
