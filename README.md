@@ -17,9 +17,7 @@
   </p>
 </p>
 
-![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/feature/src/images/mobile.gif)
-![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/feature/src/images/desktop.gif)
-![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/feature/src/images/mobile.PNG)
+![screenshot](https://github.com/IBUNHABIBU/pongGame/blob/development/dist/images/game.PNG)
 
 ## Built with
 * HTML
