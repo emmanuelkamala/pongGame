@@ -57,19 +57,19 @@ Clone this repository
 Give a :star: if you liked this project 
 ## AcknowledgmentsCredits go to
 
-* My mentor Tunde Oratade for technical assistance.
+* My mentor for technical assistance.
 * All Microverse TSEs for their feedback that makes me improve technically.
 
 ## 📝 License
 This project is [MIT](LICENCE) licensed.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/IBUNHABIBU/weather-app.svg?style=flat-square
-[contributors-url]: https://github.com/IBUNHABIBU/weather-app/graphs/contributors
+[contributors-shield]: https://img.shields.io/github/contributors/IBUNHABIBU/pongGame.svg?style=flat-square
+[contributors-url]: https://github.com/IBUNHABIBU/pongGame/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/IBUNHABIBU/weather-app.svg?style=flat-square
-[forks-url]: https://github.com/IBUNHABIBU/weather-app/network/members
+[forks-url]: https://github.com/IBUNHABIBU/pongGame/network/members
 [stars-shield]: https://img.shields.io/github/stars/IBUNHABIBU/weather-app.svg?style=flat-square
-[stars-url]: https://github.com/IBUNHABIBU/weather-app/stargazers
+[stars-url]: https://github.com/IBUNHABIBU/pongGame/stargazers
 [issues-shield]: https://img.shields.io/github/issues/IBUNHABIBU/weather-app.svg?style=flat-square
-[issues-url]: https://github.com/IBUNHABIBU/weather-app/issues
+[issues-url]: https://github.com/IBUNHABIBU/pongGame/issues
 
