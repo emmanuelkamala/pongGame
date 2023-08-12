@@ -34,11 +34,12 @@
   * Classic gameplay: Experience the timeless thrill of Pong, perfect for quick gaming sessions or nostalgia trips.
   
 ## Requirement 
-* HTML
-* CSS
-* JavaScript
+* Node.js
+* npm
+* Phaser 3.0
 * Webpack
-* OpenWeatherMap
+* Jest
+* Web browser
 
 ## Usage
 Clone this repository 
