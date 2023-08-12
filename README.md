@@ -1,61 +1,78 @@
-# Pong Game
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
 
-This is a game design using Phaser 3 framework.
+<p align="center">
+  <a href="https://github.com/IBUNHABIBU/pongGame.git">
+    <p align="center"> <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="JavaScript" width="100" height="100"> </p>
+  </a>
 
+  <h2 align="center"> Pong game</h2>
+  <h3 align="center"> Experience the timeless thrill of Pong in our modern rendition powered by Phaser 3.0!</h3>
 
-![screenshot](./dist/images/game.png)
+  <p align="center">
+    <a href="https://github.com/IBUNHABIBU/pongGame/issues">Report Bug</a>
+    <a href="https://github.com/IBUNHABIBU/pongGame/issues">Request Feature</a>
+  </p>
+</p>
 
-## Built With
+![screenshot](https://github.com/IBUNHABIBU/pongGame/blob/development/dist/images/game.PNG)
 
-- Javascript(ES6)
-- HTML
-- CSS
-- Webpack
-- Phaser 3.0
+## Built with
+* HTML
+* CSS
+* JAVASCRIPT(ES6)
+* Webpack
+* phaser 3.0
 
+## Features 
+  * Intuitive controls: Use your keyboard or touch input to control the paddles and bounce the ball.
+  * Single-player mode: Face off against a challenging AI opponent with adjustable difficulty levels.
+  * Fluid animations: Enjoy smooth and engaging animations powered by the Phaser 3.0 framework.
+  * Responsive design: Play the game on various devices, from desktops to mobile, with a responsive user interface.
+  * Classic gameplay: Experience the timeless thrill of Pong, perfect for quick gaming sessions or nostalgia trips.
+  
+## Requirement 
+* Node.js
+* npm
+* Phaser 3.0
+* Webpack
+* Jest
+* Web browser
 
-## Live Demo
+## Usage
+Clone this repository 
 
-<a href="https://emmanuelkamala.github.io/">Live Version</a>
+ `$npm install` 
+ 
+ `$npm run start`
+ `Then open the browser and enter this link: http://localhost:8080`
 
-
-## Getting Started
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-You need to have a web browser
-
-
-### Setup
-
-# Install
-- Clone the repo
-- Run 'npm install' command to install package dependencies.
-
-# Run the index file
-
-To run the index file and see the project; enter this command on the command line:
-'npm run start'
-
-Then open the browser and enter this link:
-http://localhost:8080
+## [Live demo](https://myponggame.netlify.app/ "Of the project") of the project
 
 ## Author
+* Github: [Emmanuel Kamala](https://github.com/emmanuelkamala)
+* Twitter: [@ejkamala](https://twitter.com/ejkamala)
+* LinkedIn: [Emmanuel Kamala](https://www.linkedin.com/in/emmanuelkamala)
 
-👤 **Author**
+## your support 
+Give a :star: if you liked this project 
+## AcknowledgmentsCredits go to
 
-- Github: [@githubhandle](https://github.com/emmanuelkamala)
-- Twitter: [@twitterhandle](https://twitter.com/ejkamala)
-- Linkedin: [linkedin](https://linkedin.com/in/emmanuelkamala)
+* My mentor for technical assistance.
+* All Microverse TSEs for their feedback that makes me improve technically.
 
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!
-
-Feel free to check the [issues page](issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
+## 📝 License
+This project is [MIT](LICENCE) licensed.
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/IBUNHABIBU/pongGame.svg?style=flat-square
+[contributors-url]: https://github.com/IBUNHABIBU/pongGame/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/IBUNHABIBU/weather-app.svg?style=flat-square
+[forks-url]: https://github.com/IBUNHABIBU/pongGame/network/members
+[stars-shield]: https://img.shields.io/github/stars/IBUNHABIBU/weather-app.svg?style=flat-square
+[stars-url]: https://github.com/IBUNHABIBU/pongGame/stargazers
+[issues-shield]: https://img.shields.io/github/issues/IBUNHABIBU/weather-app.svg?style=flat-square
+[issues-url]: https://github.com/IBUNHABIBU/pongGame/issues
 
